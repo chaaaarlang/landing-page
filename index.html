@@ -12,28 +12,34 @@
   </head>
   <body>
     <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="" class="nav-link">home</a></li>
-        <li><a href="" class="nav-link">shop</a></li>
-        <li><a href="" class="nav-link">product</a></li>
-        <li><a href="" class="nav-link">blog</a></li>
-        <li><a href="" class="nav-link">faq</a></li>
-      </ul>
+      <div class="navbar-center">
+        <ul class="nav-links">
+          <li><a href="" class="nav-link">home</a></li>
+          <li><a href="" class="nav-link">shop</a></li>
+          <li><a href="" class="nav-link">product</a></li>
+          <li><a href="" class="nav-link">blog</a></li>
+          <li><a href="" class="nav-link">faq</a></li>
+        </ul>
 
-      <div class="nav-logo">YourShop</div>
-      <div class="nav-icons">
-        <a href="" class="nav-icon"
-          ><img src="images/buttons/search.svg" alt=""
-        /></a>
-        <a href="" class="nav-icon"
-          ><img src="images/buttons/heart.svg" alt=""
-        /></a>
-        <a href="" class="nav-icon"
-          ><img src="images/buttons/cart.svg" alt=""
-        /></a>
-        <a href="" class="nav-icon"
-          ><img src="images/buttons/account.svg" alt=""
-        /></a>
+        <div class="nav-logo">YourShop</div>
+        <div class="nav-icons">
+          <a href="" class="nav-icon"
+            ><img src="images/buttons/search.svg" alt=""
+          /></a>
+          <a href="" class="nav-icon"
+            ><img src="images/buttons/heart.svg" alt=""
+          /></a>
+          <a href="" class="nav-icon"
+            ><img src="images/buttons/cart.svg" alt=""
+          /></a>
+          <a href="" class="nav-icon"
+            ><img src="images/buttons/account.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="nav-btn">
+          <img src="images/buttons/nav.svg" alt="" />
+        </div>
       </div>
     </nav>
     <section class="hero">
@@ -52,7 +58,7 @@
       </div>
       <div class="card-one">
         <div class="card-position">
-          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <h1>Lorem, ipsum dolor sit amet consectetur.</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sint
             molestiae modi? Alias aspernatur illo possimus minus cumque
@@ -136,14 +142,14 @@
         <div class="underline"></div>
         <h4>what buyers say</h4>
         <h3>latest reviews</h3>
+        <div class="review-btns">
+          <button type="button" class="review-btn">
+            <img src="images/buttons/prev.svg" alt="" /></button
+          ><button type="button" class="review-btn">
+            <img src="images/buttons/next.svg" alt="" />
+          </button>
+        </div>
         <div class="reviews">
-          <div class="review-btns">
-            <button type="button" class="review-btn">
-              <img src="images/buttons/prev.svg" alt="" /></button
-            ><button type="button" class="review-btn">
-              <img src="images/buttons/next.svg" alt="" />
-            </button>
-          </div>
           <div class="review">
             <div class="review-top">
               <img src="images/melissa.jpg" alt="" class="review-img" />
@@ -219,17 +225,19 @@
         <img src="images/post_3.jpg" alt="" class="post" />
         <img src="images/post_4.jpg" alt="" class="post" />
       </div>
-      <div class="subscribe-container">
-        <div class="subscribe-column">
-          <h3>subscribe to get more fun</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-            delectus.
-          </p>
-        </div>
+      <div class="subscribe">
+        <div class="subscribe-center">
+          <div class="subscribe-column">
+            <h3>subscribe to get more fun</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, delectus.
+            </p>
+          </div>
 
-        <input type="email" class="email" placeholder="enter your email" />
-        <button type="submit" class="submit">subscribe</button>
+          <input type="email" class="email" placeholder="enter your email" />
+          <button type="submit" class="submit">subscribe</button>
+        </div>
       </div>
       <div class="more-container">
         <div class="first">
@@ -275,8 +283,10 @@
         </div>
       </div>
       <div class="copyrights">
-        <h3>copyrights © 2022 yourshop</h3>
-        <h3>all rights reserved</h3>
+        <div class="copyrights-position">
+          <h3>copyrights © 2022 yourshop</h3>
+          <h3>all rights reserved</h3>
+        </div>
       </div>
     </footer>
 
