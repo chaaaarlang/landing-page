@@ -93,7 +93,7 @@ a {
 .nav-link {
   margin-right: 1rem;
   font-family: "Work Sans", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   color: var(--clr-2);
   text-transform: uppercase;
 }
@@ -104,7 +104,9 @@ a {
   width: 100%;
   text-align: center;
 }
-
+.nav-logo:nth-child(1) {
+  text-align: left;
+}
 .nav-icons {
   gap: 20px;
   display: flex;
@@ -112,16 +114,20 @@ a {
   width: 100%;
   justify-content: flex-end;
 }
-.nav-icon > img {
-  height: 20px;
+.nav-icon > .bi {
+  font-size: 1.4rem;
+  color: var(--clr-2);
 }
-
+.nav-btn {
+  display: none;
+}
 /* header */
 .hero {
   height: 100vh;
 }
 
-.hero-btns {
+.hero-btns,
+.card-position {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,11 +148,11 @@ a {
 .review-btn:hover {
   background: var(--clr-1);
 }
-.hero-btn > img,
-.item-btn > img,
-.review-btn > img {
-  height: 30px;
-  width: 30px;
+.hero-btn > .bi,
+.item-btn > .bi,
+.review-btn > .bi {
+  font-size: 30px;
+  color: var(--clr-2);
 }
 
 .circles {
@@ -166,22 +172,35 @@ a {
   background: rgba(102, 102, 102, 0.75);
 }
 
-.card-one {
+.cards {
   height: 100vh;
   margin-top: -42.22px;
   display: flex;
   align-items: center;
   flex-direction: column;
   color: var(--clr-white);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/ksenia-kazak-CK3gxJe3AzY-unsplash.jpg) center/cover;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
 }
-
+.card {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.card > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -3;
+}
 .card-position {
-  padding: 0 90px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .card-position > h1 {
   font-size: 2rem;
   font-family: var(--fnt-2);
@@ -620,17 +639,21 @@ footer > a {
   font-size: 0.85rem;
   font-weight: 600;
 }
-.social > img {
-  height: 30px;
+.social > .bi {
+  font-size: 30px;
+  color: var(--clr-1);
 }
 .fourth > h5 {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
-.fourth > h5 > img {
-  height: 15px;
-  width: 15px;
+.email-text {
+  text-transform: lowercase;
+}
+.fourth > h5 > .bi {
+  font-size: 1rem;
+  color: var(--clr-1);
 }
 
 .copyrights {
@@ -694,9 +717,11 @@ footer > a {
   .nav-logo {
     text-align: left;
   }
-  .nav-btn > img {
-    height: 30px;
-    width: 30px;
+  .nav-btn {
+    display: block;
+  }
+  .nav-btn > .bi {
+    font-size: 30px;
     margin-left: 30px;
   }
   .reviews {

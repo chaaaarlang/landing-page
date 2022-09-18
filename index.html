@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <title>YourShop</title>
   </head>
@@ -23,22 +24,14 @@
 
         <div class="nav-logo">YourShop</div>
         <div class="nav-icons">
-          <a href="" class="nav-icon"
-            ><img src="images/buttons/search.svg" alt=""
-          /></a>
-          <a href="" class="nav-icon"
-            ><img src="images/buttons/heart.svg" alt=""
-          /></a>
-          <a href="" class="nav-icon"
-            ><img src="images/buttons/cart.svg" alt=""
-          /></a>
-          <a href="" class="nav-icon"
-            ><img src="images/buttons/account.svg" alt=""
-          /></a>
+          <a href="" class="nav-icon"><i class="bi bi-search"></i></a>
+          <a href="" class="nav-icon"><i class="bi bi-heart"></i></a>
+          <a href="" class="nav-icon"><i class="bi bi-bag"></i></a>
+          <a href="" class="nav-icon"><i class="bi bi-person-circle"></i></a>
         </div>
 
         <div class="nav-btn">
-          <img src="images/buttons/nav.svg" alt="" />
+          <i class="bi bi-list"></i>
         </div>
       </div>
       <ul class="sidebar">
@@ -52,9 +45,9 @@
     <section class="hero">
       <div class="hero-btns">
         <button type="button" class="hero-btn">
-          <img src="images/buttons/prev.svg" alt="" /></button
+          <i class="bi bi-arrow-left"></i></button
         ><button type="button" class="hero-btn">
-          <img src="images/buttons/next.svg" alt="" />
+          <i class="bi bi-arrow-right"></i>
         </button>
       </div>
       <div class="circles">
@@ -63,15 +56,18 @@
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
-      <div class="card-one">
-        <div class="card-position">
-          <h1>Lorem, ipsum dolor sit amet consectetur.</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sint
-            molestiae modi? Alias aspernatur illo possimus minus cumque
-            excepturi unde?
-          </p>
-          <button type="button" class="button">buy now</button>
+      <div class="cards">
+        <div class="card">
+          <img src="images/ksenia-kazak-CK3gxJe3AzY-unsplash.jpg" alt="" />
+          <div class="card-position">
+            <h1>Lorem, ipsum dolor sit amet consectetur.</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              sint molestiae modi? Alias aspernatur illo possimus minus cumque
+              excepturi unde?
+            </p>
+            <button type="button" class="button">buy now</button>
+          </div>
         </div>
       </div>
     </section>
@@ -105,9 +101,9 @@
         </div>
         <div class="item-btns">
           <button type="button" class="item-btn">
-            <img src="images/buttons/prev.svg" alt="" /></button
+            <i class="bi bi-arrow-left"></i></button
           ><button type="button" class="item-btn">
-            <img src="images/buttons/next.svg" alt="" />
+            <i class="bi bi-arrow-right"></i>
           </button>
         </div>
       </div>
@@ -151,9 +147,9 @@
         <h3>latest reviews</h3>
         <div class="review-btns">
           <button type="button" class="review-btn">
-            <img src="images/buttons/prev.svg" alt="" /></button
+            <i class="bi bi-arrow-left"></i></button
           ><button type="button" class="review-btn">
-            <img src="images/buttons/next.svg" alt="" />
+            <i class="bi bi-arrow-right"></i>
           </button>
         </div>
         <div class="reviews">
@@ -251,15 +247,9 @@
           <div class="nav-logo">YourShop</div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div class="socials">
-            <a href="" class="social"
-              ><img src="images/socials/fb.svg" alt=""
-            /></a>
-            <a href="" class="social"
-              ><img src="images/socials/ig.svg" alt=""
-            /></a>
-            <a href="" class="social"
-              ><img src="images/socials/twit.svg" alt=""
-            /></a>
+            <a href="" class="social"><i class="bi bi-facebook"></i></a>
+            <a href="" class="social"><i class="bi bi-instagram"></i></a>
+            <a href="" class="social"><i class="bi bi-twitter"></i></a>
           </div>
         </div>
         <div class="more second">
@@ -277,14 +267,12 @@
         <div class="more fourth">
           <h4>contact us</h4>
           <h5>
-            <img src="images/buttons/loc.svg" alt="" /> 1234 Ash Dr. San Jose,
-            South Dakota 5678
+            <i class="bi bi-geo-alt"></i> 1234 Ash Dr. San Jose, South Dakota
+            5678
           </h5>
-          <h5>
-            <img src="images/buttons/contact.svg" alt="" /> (123) 456-7890
-          </h5>
-          <h5>
-            <img src="images/buttons/mail.svg" alt="" />
+          <h5><i class="bi bi-telephone"></i> (123) 456-7890</h5>
+          <h5 class="email-text">
+            <i class="bi bi-envelope"></i>
             yourshop.contacts@sample.com
           </h5>
         </div>
@@ -296,7 +284,7 @@
         </div>
       </div>
     </footer>
-
-    <script src="app.js"></script>
+    <script src="src/Data.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
